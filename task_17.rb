@@ -1,6 +1,6 @@
 class Resume
 	attr_accessor :first_name, :last_name, :address, :phone_number, :email_id, :about_you, :skills, :courses_name, 
-			:date_of_birth, :gender, :nationality, :languages_known, :save_file
+		      :date_of_birth, :gender, :nationality, :languages_known, :save_file
 
 	def self.build
 		user_info = self.new
@@ -150,10 +150,10 @@ class Resume
 		aFile = File.new("#{first_name + email_id}.txt","w") 
 		save_file = File.open(aFile, "a") do |file|
 			file.puts " ADDRESS SECTION\n ___________________\n First Name : #{first_name}\n Last Name : #{last_name}\n Address : #{address}" + 
-								"\n Contact Number : #{phone_number}\n e-mail id : #{email_id}\n\n SUMMARY SECTION\n ___________________" +
-								"\n About You (Brief Summary) : #{about_you}\n\n EDUCATION DETAILS\n ___________________\n Skills : #{skills}" + 
-								"\n Courses Completed : #{courses_name}\n\n PERSONAL DETAILS\n ___________________\n Date of Birth : #{date_of_birth}" +
-								"\n Gender : #{gender}\n Nationality : #{nationality}\n Languages Known : #{languages_known}\n"
+				  "\n Contact Number : #{phone_number}\n e-mail id : #{email_id}\n\n SUMMARY SECTION\n ___________________" +
+				  "\n About You (Brief Summary) : #{about_you}\n\n EDUCATION DETAILS\n ___________________\n Skills : #{skills}" + 
+				  "\n Courses Completed : #{courses_name}\n\n PERSONAL DETAILS\n ___________________\n Date of Birth : #{date_of_birth}" +
+				  "\n Gender : #{gender}\n Nationality : #{nationality}\n Languages Known : #{languages_known}\n"
 		end
 	end
 end	
