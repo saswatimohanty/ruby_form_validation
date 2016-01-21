@@ -1,6 +1,6 @@
 class Resume
-	attr_accessor :first_name, :last_name, :address, :phone_number, :email_id, :about_you, :skills, :courses_name, :date_of_birth, 
-								:gender, :nationality, :languages_known, :save_file
+	attr_accessor :first_name, :last_name, :address, :phone_number, :email_id, :about_you, :skills, :courses_name, 
+			:date_of_birth, :gender, :nationality, :languages_known, :save_file
 
 	def self.build
 		user_info = self.new
